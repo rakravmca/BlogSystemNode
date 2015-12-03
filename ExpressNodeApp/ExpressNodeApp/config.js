@@ -1,0 +1,1 @@
+﻿module.exports.connectionstring = 'mongodb://sa:mindfire@ds057934.mongolab.com:57934/blogsystem';
