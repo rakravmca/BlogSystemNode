@@ -21,14 +21,14 @@ function auntheticate() {
     //});
 
     $.ajax({
-        url: '/auntheticate',
+        url: '/login/auntheticate',
         dataType: "json",
         type: "post",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(obj),
         success: function (result) {
             if (result) {
-                document.location.href = '/home';
+                //document.location.href = '/home';
             }
         },
         error: function (jqXHR, textstatus, errorThrown) {

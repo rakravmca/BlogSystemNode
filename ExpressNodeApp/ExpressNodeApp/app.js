@@ -42,7 +42,7 @@ app.use('/home', auth.checkauth, home);
 app.use('/user', auth.checkauth, user);
 
 app.get('/logout', auth.logout);
-app.post('/auntheticate', auth.authenticate);
+//app.post('/auntheticate', auth.authenticate);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

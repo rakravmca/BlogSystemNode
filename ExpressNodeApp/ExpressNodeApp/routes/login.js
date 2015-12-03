@@ -1,6 +1,7 @@
 ﻿var User = require('../models/user');
 var express = require('express');
 var router = express.Router();
+var auth = require('../auth');
 //var mongoose = require('mongoose');
 
 
@@ -14,15 +15,6 @@ router.get('/', function (req, res) {
     });
 });
 
-//router.route('/auntheticate').post(function (req, res) {
-//    User.findOne({ username: 'rakesh' }, function (err, result) {
-//        if (err) {
-//            return res.send(err);
-//        }
-                
-//        req.session.username = req.body.username;
-//        res.json(result);
-//    });
-//});
+router.post('/auntheticate', auth.authenticate);
 
 module.exports = router;
